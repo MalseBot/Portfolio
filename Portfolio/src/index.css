@@ -1,5 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.shadow-inner-purple {
+  box-shadow: inset #882b8a 0 0 20px 10px;
+}
+* {
+  font-family: 'Raleway', sans-serif;
+}
+.swipe {
+  transition: transform 0.5s;
+}
 
+.swipe-right {
+  transform: translateX(-100%);
+}
+.bg-hero {
+  background-image: url(./assets/Awesome\ 4K\ Universe\ Wallpapers\ -\ WallpaperAccess.jpg);
+  background-size: cover;
+}
+.bg-pro {
+  background-image: url(./assets/blue-sky.jpg);
+  background-size: cover;
+}
+.bg-footro {
+  background-image: url(./assets/fantastic-seascape-with-ripples.jpg);
+  background-size: cover;
+}
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
 

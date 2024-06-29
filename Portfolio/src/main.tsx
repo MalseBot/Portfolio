@@ -5,8 +5,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Home.tsx'
 import NavBar from './NavBar.tsx'
 
-
-
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
     <img src={BG} className=' -z-50 fixed w-full h-screen' />
