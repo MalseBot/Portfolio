@@ -20,7 +20,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className='fixed end-0 text-sky-200 z-10 rounded-es-2xl bg-sky-700 border-sky-400 border-2 border-t-0 border-e-0 p-1'>
+      <div className='shadow-xl shadow-black fixed end-0 text-sky-200 z-10 rounded-es-2xl bg-sky-700 border-sky-400 border-2 border-t-0 border-e-0 p-1'>
         <Link to={'/'}>
           <div className='relative z-20 hover:scale-110 hover:translate-x-0 hover:transform hover:duration-300  duration-300 hover:z-50'>
             <AiTwotoneHome fontSize={30} className='' />
@@ -31,13 +31,8 @@ const NavBar = () => {
             <PiProjectorScreenChart fontSize={30} className='' />
           </div>
         </Link>
-        <Link to={'/Experience'}>
-          <div className='relative z-20 hover:scale-110 hover:translate-x-0 hover:transform hover:duration-300  duration-300 hover:z-50'>
-            <GiClassicalKnowledge fontSize={30} className=' ' />
-          </div>
-        </Link>
       </div>
-      <div className=' fixed top-10 z-10 rounded-e-2xl bg-sky-700 border-sky-400 border-2 border-s-0 p-1'>
+      <div className='shadow-xl shadow-black fixed top-10 z-10 rounded-e-2xl bg-sky-700 border-sky-400 border-2 border-s-0 p-1'>
         <a
           href='https://www.instagram.com/eslamwtf/'
           target='_blank'
@@ -84,7 +79,7 @@ const NavBar = () => {
         </a>
       </div>
       <button
-        className='fixed left-16 text-2xl text-sky-200 z-10 rounded-es-2xl rounded-ee-2xl bg-sky-700 border-sky-400 border-4 border-t-0 pt-0 uppercase font-bold p-1 hover:scale-105 transition-all duration-700 hover:cursor-pointer '
+        className='shadow-xl shadow-black fixed left-16 text-2xl text-sky-200 z-10 rounded-es-2xl rounded-ee-2xl bg-sky-700 border-sky-400 border-4 border-t-0 pt-0 uppercase font-bold p-1 hover:scale-105 transition-all duration-700 hover:cursor-pointer '
         onClick={() => setGlobalState('jobTitle', titleChange)}>
         as a{' '}
         <span

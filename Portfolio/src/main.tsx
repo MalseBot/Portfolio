@@ -4,6 +4,7 @@ import { BG } from './assets'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Home.tsx'
 import NavBar from './NavBar.tsx'
+import Projects from './Projects.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
@@ -11,6 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <NavBar />
     <Routes>
       <Route path='/' element={<Home />} />
+      <Route path='/Projects' element={<Projects/>}/>
     </Routes>
   </BrowserRouter>
 )

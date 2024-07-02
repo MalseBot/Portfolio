@@ -201,9 +201,8 @@ function Home() {
                 height={250}
                 src='https://www.youtube.com/embed/jbWDfUqM1Hc?si=fwpxfsdVdoF4uyzK'
                 title='YouTube video player'
-                frameborder='0'
                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                allowfullscreen></iframe>
+                ></iframe>
               <div className=' text-fuchsia-200 bg-'>
                 <h3 className=' border-b-2 border-rose-300 text-2xl font-bold'>
                   Casa Cloths Shop
