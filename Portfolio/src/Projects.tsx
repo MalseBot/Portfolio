@@ -1,5 +1,5 @@
 import { copywriter, frontEnd, useGlobalState } from './State'
-import list from './Data'
+import list from './Data.tsx'
 import ProjectInfo from './ProjectInfo'
 import { useState } from 'react'
 function Projects() {

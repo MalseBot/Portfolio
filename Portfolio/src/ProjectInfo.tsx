@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Git, Web, Close } from './assets'
 function ProjectInfo({ list, setShow, show}) {
-  const { img, img2, img3, img4, title, details, altert, link } = list
+  const { img, img2, img3, img4, title, details, altert, link,gitLink } = list
   const [shown, setShown] = useState(img)
   return (
     <div
@@ -37,10 +37,10 @@ function ProjectInfo({ list, setShow, show}) {
           <h2 className='text-3xl font-bold uppercase'>{title}</h2>{' '}
           <p className=' font-semibold'>{details}</p>
           <div className='flex w-full p-5 justify-between  absolute bottom-0'>
-            <button className='border-2 rounded-full px-2  border-sky-950 flex uppercase font-bold justify-center items-center hover:border-transparent hover:bg-sky-950 text-sky-950 hover:text-sky-300 duration-200'>
+            <a target='blank' href={gitLink} className='border-2 rounded-full px-2  border-sky-950 flex uppercase font-bold justify-center items-center hover:border-transparent hover:bg-sky-950 text-sky-950 hover:text-sky-300 duration-200'>
               <img src={Git} width={27} />
               github
-            </button>
+            </a>
             <a
               target='blank'
               href={link}
