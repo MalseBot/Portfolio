@@ -15,6 +15,7 @@ import {
   proPic72,
   proPic73,
   proPic74,
+  // @ts-ignore
 } from './assets'
 
 const list = [

@@ -4,6 +4,7 @@ import ProjectInfo from './ProjectInfo'
 import { useState } from 'react'
 function Projects() {
   let title = useGlobalState('jobTitle')[0]
+
   return (
     <div>
       {copywriter === title && (

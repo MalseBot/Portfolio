@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client'
 import './index.css'
+// @ts-ignore
 import { BG } from './assets'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Home.tsx'

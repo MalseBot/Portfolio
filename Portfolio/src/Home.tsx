@@ -8,6 +8,7 @@ import {
   proPic7,
   proPic3,
   proPic4,
+  // @ts-ignore
 } from './assets'
 import { copywriter, frontEnd, useGlobalState } from './State'
 import { useEffect, useState } from 'react'
@@ -23,7 +24,7 @@ function Home() {
   let title = useGlobalState('jobTitle')[0]
   const [currentImage, setCurrentImage] = useState(0)
   const [swipe, setSwipe] = useState(false)
-
+  // @ts-ignore
   useEffect(() => {
     const interval = setInterval(() => {
       setSwipe(true)
@@ -32,6 +33,7 @@ function Home() {
         setSwipe(false)
       }, 500)
     }, 5000)
+    // @ts-ignore
     return (e) => clearInterval(interval)
   }, [])
 

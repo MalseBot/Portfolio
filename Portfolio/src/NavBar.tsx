@@ -1,3 +1,4 @@
+// @ts-ignore
 import { IN, Face, Git, G, Insta, twitX, cv } from './assets'
 import { Link } from 'react-router-dom'
 import { AiTwotoneHome } from 'react-icons/ai'
