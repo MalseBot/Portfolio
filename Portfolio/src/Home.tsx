@@ -5,7 +5,7 @@ import {
   aboutPic2,
   aboutPic3,
   proPic1,
-  proPic2,
+  proPic7,
   proPic3,
   proPic4,
 } from './assets'
@@ -38,23 +38,23 @@ function Home() {
   return (
     <div className=' py-16'>
       <div className=' relative '>
-        <div className=' flex flex-col justify-center items-center  w-full h-full md:h-screen md:flex-row-reverse'>
-          <div className=' w-2/5 '>
+        <div className='px-10 flex flex-col justify-center items-center  w-full h-full md:h-screen md:flex-row-reverse'>
+          <div className='sm:w-1/4 w-full '>
             <img
               src={PI}
-              className=' border-sky-500 border-2 shadow-2xl  animate-bounce-slow '
+              className=' border-sky-500 border-2 shadow-2xl shadow-black  animate-bounce-slow '
               alt=''
             />
           </div>
           {frontEnd === title && (
-            <div className=' bg-gray-900 shadow-2xl p-5 flex flex-col mx-14 md:h-min  '>
+            <div className=' bg-gray-900 shadow-2xl shadow-black p-5 flex flex-col sm:w-3/4 m-10 me-0 md:h-min  '>
               <h1 className=' capitalize mb-5  text-fuchsia-200 text-3xl md:text-4xl font-bold '>
                 React Developer
               </h1>
               <h3 className='text-md  text-fuchsia-200 md:text-xl text-opacity-40 '>
                 Seasoned React Developer with a Passion for Innovative Solutions
               </h3>
-              <p className='mt-5 text-sm md:text-lg  text-fuchsia-200 text-opacity-75'>
+              <div className='mt-5 text-sm md:text-lg  text-fuchsia-200 text-opacity-75'>
                 As a versatile React developer with 2 years of professional
                 experience, I've honed my skills in crafting dynamic,
                 user-centric web applications. Proficient in both Tailwind CSS
@@ -83,18 +83,18 @@ function Home() {
                 project, I'd welcome the opportunity to discuss how my expertise
                 can help you achieve your goals. Let's connect and explore the
                 possibilities together.
-              </p>
+              </div>
             </div>
           )}
           {copywriter === title && (
-            <div className=' bg-gray-900 shadow-2xl p-5 flex flex-col mx-14 md:h-min  '>
+            <div className=' bg-gray-900 shadow-2xl shadow-black p-5 flex flex-col sm:w-3/4 m-10 me-0 md:h-min  '>
               <h1 className=' capitalize mb-5  text-fuchsia-200 text-3xl md:text-4xl font-bold '>
                 CopyWriter
               </h1>
               <h3 className='text-md  text-fuchsia-200 md:text-xl text-opacity-40 '>
                 Aspiring Copywriter Eager to Craft Compelling Content
               </h3>
-              <p className='mt-5 text-sm md:text-lg  text-fuchsia-200 text-opacity-75'>
+              <div className='mt-5 text-sm md:text-lg  text-fuchsia-200 text-opacity-75'>
                 As a recent graduate with a degree in Marketing Communication,
                 I'm an aspiring copywriter looking to apply my passion for
                 wordsmithing and storytelling to help brands connect with their
@@ -127,7 +127,7 @@ function Home() {
                 content creation needs, I'd welcome the opportunity to discuss
                 how I can contribute to your success. I'm excited to learn,
                 grow, and create something truly impactful together.
-              </p>
+              </div>
             </div>
           )}
         </div>
@@ -142,14 +142,14 @@ function Home() {
               alt='Swiper'
               className={`swipe ${
                 swipe ? 'swipe-right' : ''
-              } w-full border-sky-500 border-2 shadow-2xl`}
+              } w-full border-sky-500 border-2 shadow-black shadow-2xl`}
             />
           </div>
-          <div className=' shadow-2xl border-blue-950 border-4 mt-0 ms-0 w-2/3 bg-indigo-950 text-gray-400 p-3 text-xs md:text-lg'>
+          <div className=' shadow-2xl shadow-black border-blue-950 border-4 mt-0 ms-0 w-2/3 bg-indigo-950 text-gray-400 p-3 text-xs md:text-lg'>
             <h2 className=' text-fuchsia-200 uppercase font-bold text-2xl md:text-4xl mb-2'>
               Know me more
             </h2>
-            <p>
+            <div>
               <span className=' font-semibold'>Eslam Hassanin, 23</span>, I am a
               marketing professional from Alexandria, Egypt, with a{' '}
               <span className=' font-semibold'>diverse skill set</span> and a
@@ -184,7 +184,7 @@ function Home() {
                   grow
                 </li>
               </ul>
-            </p>
+            </div>
           </div>
         </div>
       </div>
@@ -201,8 +201,7 @@ function Home() {
                 height={250}
                 src='https://www.youtube.com/embed/jbWDfUqM1Hc?si=fwpxfsdVdoF4uyzK'
                 title='YouTube video player'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                ></iframe>
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'></iframe>
               <div className=' text-fuchsia-200 bg-'>
                 <h3 className=' border-b-2 border-rose-300 text-2xl font-bold'>
                   Casa Cloths Shop
@@ -234,7 +233,7 @@ function Home() {
                     alt=''
                   />
                   <img
-                    src={proPic2}
+                    src={proPic7}
                     className=' gap-56 border-2 border-sky-400 rounded-3xl hover:scale-105 duration-150'
                     alt=''
                   />
@@ -276,13 +275,13 @@ function Home() {
                 <img src={proPic1} alt='' />
               </SwiperSlide>
               <SwiperSlide className=''>
-                <img src={proPic2} alt='' />
+                <img src={proPic7} alt='' />
               </SwiperSlide>
               <SwiperSlide className=''>
                 <img src={proPic1} alt='' />
               </SwiperSlide>
               <SwiperSlide className=''>
-                <img src={proPic2} alt='' />
+                <img src={proPic7} alt='' />
               </SwiperSlide>
             </Swiper>
             <Link

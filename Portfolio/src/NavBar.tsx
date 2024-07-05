@@ -1,7 +1,6 @@
-import { IN, Face, Git, G, Insta, twitX } from './assets'
+import { IN, Face, Git, G, Insta, twitX, cv } from './assets'
 import { Link } from 'react-router-dom'
 import { AiTwotoneHome } from 'react-icons/ai'
-import { GiClassicalKnowledge } from 'react-icons/gi'
 import { PiProjectorScreenChart } from 'react-icons/pi'
 import { copywriter, frontEnd, setGlobalState, useGlobalState } from './State'
 
@@ -19,20 +18,20 @@ const NavBar = () => {
   }
 
   return (
-    <div>
-      <div className='shadow-xl shadow-black fixed end-0 text-sky-200 z-10 rounded-es-2xl bg-sky-700 border-sky-400 border-2 border-t-0 border-e-0 p-1'>
+    <div className='z-50 relative'>
+      <div className='shadow-xl shadow-black fixed end-0 text-sky-200 rounded-es-2xl bg-sky-700 border-sky-400 border-2 border-t-0 border-e-0 p-1'>
         <Link to={'/'}>
-          <div className='relative z-20 hover:scale-110 hover:translate-x-0 hover:transform hover:duration-300  duration-300 hover:z-50'>
+          <div className='relative z-20 hover:scale-110 hover:text-sky-950 hover:translate-x-0 hover:transform hover:duration-300  duration-300 hover:z-50'>
             <AiTwotoneHome fontSize={30} className='' />
           </div>
         </Link>
         <Link to={'/Projects'}>
-          <div className='relative z-20 hover:scale-110 hover:translate-x-0 hover:transform hover:duration-300  duration-300 hover:z-50'>
+          <div className='relative z-20 hover:scale-110 hover:text-sky-950 hover:translate-x-0 hover:transform hover:duration-300  duration-300 hover:z-50'>
             <PiProjectorScreenChart fontSize={30} className='' />
           </div>
         </Link>
       </div>
-      <div className='shadow-xl shadow-black fixed top-10 z-10 rounded-e-2xl bg-sky-700 border-sky-400 border-2 border-s-0 p-1'>
+      <div className='shadow-xl shadow-black fixed top-1/4 rounded-e-2xl bg-sky-700 border-sky-400 border-2 border-s-0 p-1'>
         <a
           href='https://www.instagram.com/eslamwtf/'
           target='_blank'
@@ -78,20 +77,23 @@ const NavBar = () => {
           </div>
         </a>
       </div>
+      <a
+        target='blank'
+        href='https://drive.google.com/file/d/1yOjnElInOyjlgfjLMgK8DMlnSxz3dmMi/view'
+        className='fixed flex end-0 top-1/4 text-2xl hover:text-sky-950 bg-sky-700 -rotate-90 p-1 border-b-0 translate-x-14 duration-300 rounded-t-2xl font-semibold border-sky-400 border-4 uppercase text-sky-200 hover:bg-sky-500 shadow-xl shadow-black'>
+        <img src={cv} alt='' />
+        resume
+      </a>
       <button
-        className='shadow-xl shadow-black fixed left-16 text-2xl text-sky-200 z-10 rounded-es-2xl rounded-ee-2xl bg-sky-700 border-sky-400 border-4 border-t-0 pt-0 uppercase font-bold p-1 hover:scale-105 transition-all duration-700 hover:cursor-pointer '
+        className='hover:text-sky-950 hover:bg-sky-500 shadow-xl shadow-black fixed left-16 text-2xl text-sky-200 rounded-es-2xl rounded-ee-2xl bg-sky-700 border-sky-400 border-4 border-t-0 pt-0 uppercase font-bold p-1 hover:scale-105 transition-all duration-700 hover:cursor-pointer'
         onClick={() => setGlobalState('jobTitle', titleChange)}>
         as a{' '}
         <span
-          className={`transition-all duration-700 ${
-            title === copywriter ? 'opacity-100' : 'opacity-0'
-          }`}>
+          className={`${title === copywriter ? 'opacity-100' : 'opacity-0'}`}>
           {title === copywriter && copywriter}
         </span>
         <span
-          className={`transition-all duration-700 ${
-            title === frontEnd ? 'opacity-100' : 'opacity-0'
-          }`}>
+          className={` ${title === frontEnd ? 'opacity-100' : 'opacity-0'}`}>
           {title === frontEnd && frontEnd}
         </span>
       </button>
